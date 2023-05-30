@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import javax.annotation.Nullable;
+
 @Getter
 @Setter
 @ToString
@@ -14,4 +16,6 @@ public class GoogleCaptchaEntity {
     private String token;
     private String siteKey;
     private String projectId;
+    @Nullable
+    private String action;
 }

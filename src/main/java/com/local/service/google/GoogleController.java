@@ -18,11 +18,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Optional;
+
 @RestController
 @RequestMapping("/api/v1")
 public class GoogleController {
-
-    String recaptchaAction = "";
 
     @Value("${google.apikey}")
     private String apiKey;
@@ -31,6 +31,8 @@ public class GoogleController {
     @ResponseStatus(HttpStatus.OK)
     public void validate(@RequestBody GoogleCaptchaEntity googleCaptchaEntity) throws Exception {
         System.out.println(googleCaptchaEntity);
+
+        String recaptchaAction = Optional.ofNullable(googleCaptchaEntity.getAction()).orElse("");
 
         this.createAssessment(googleCaptchaEntity.getProjectId(), googleCaptchaEntity.getSiteKey(), googleCaptchaEntity.getToken(), recaptchaAction);
     }
@@ -108,6 +110,8 @@ public class GoogleController {
             String assessmentName = response.getName();
             System.out.println(
                     "Assessment name: " + assessmentName.substring(assessmentName.lastIndexOf("/") + 1));
+
+            System.out.println(response.toString());
         }
     }
 }
