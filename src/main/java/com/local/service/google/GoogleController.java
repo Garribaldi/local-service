@@ -12,6 +12,7 @@ import com.google.recaptchaenterprise.v1.RiskAnalysis;
 import com.local.service.google.data.GoogleCaptchaEntity;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -29,12 +30,17 @@ public class GoogleController {
 
     @PostMapping("/google-evaluate")
     @ResponseStatus(HttpStatus.OK)
-    public void validate(@RequestBody GoogleCaptchaEntity googleCaptchaEntity) throws Exception {
+    public ResponseEntity<String> validate(@RequestBody GoogleCaptchaEntity googleCaptchaEntity) throws Exception {
         System.out.println(googleCaptchaEntity);
 
-        String recaptchaAction = Optional.ofNullable(googleCaptchaEntity.getAction()).orElse("");
+        if (googleCaptchaEntity.getToken().isEmpty()) {
+            return ResponseEntity.badRequest().body("{\"error\": \"No Token provided\"}");
+        }
 
+        String recaptchaAction = Optional.ofNullable(googleCaptchaEntity.getAction()).orElse("");
         this.createAssessment(googleCaptchaEntity.getProjectId(), googleCaptchaEntity.getSiteKey(), googleCaptchaEntity.getToken(), recaptchaAction);
+
+        return ResponseEntity.ok().build();
     }
 
     /**

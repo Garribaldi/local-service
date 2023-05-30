@@ -1,2 +1,9 @@
-### Test
-GET http://localhost:8080/api/v1/test
+### Token Assessment
+POST http://localhost:8080/api/v1/google-evaluate
+Content-Type: application/json
+
+{
+  "token": "",
+  "siteKey": "abcd1234",
+  "projectId": "ghij5678"
+}
