@@ -7,3 +7,11 @@ Content-Type: application/json
   "siteKey": "abcd1234",
   "projectId": "ghij5678"
 }
+
+
+### Employee Data
+GET http://localhost:8080/api/v1/employees
+
+
+### NBA Teams Data
+GET http://localhost:8080/api/v1/nba-teams

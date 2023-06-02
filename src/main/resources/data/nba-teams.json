@@ -1,0 +1,242 @@
+[
+  {
+    "teamId": 1610612737,
+    "abbreviation": "ATL",
+    "teamName": "Atlanta Hawks",
+    "simpleName": "Hawks",
+    "location": "Atlanta",
+    "date": "2023-05-01T00:00:00.000Z"
+  },
+  {
+    "teamId": 1610612738,
+    "abbreviation": "BOS",
+    "teamName": "Boston Celtics",
+    "simpleName": "Celtics",
+    "location": "Boston",
+    "date": "2023-05-09T00:00:00.000Z"
+  },
+  {
+    "teamId": 1610612751,
+    "abbreviation": "BKN",
+    "teamName": "Brooklyn Nets",
+    "simpleName": "Nets",
+    "location": "Brooklyn",
+    "date": "2023-05-02T00:00:00.000Z"
+  },
+  {
+    "teamId": 1610612766,
+    "abbreviation": "CHA",
+    "teamName": "Charlotte Hornets",
+    "simpleName": "Hornets",
+    "location": "Charlotte",
+    "date": "2023-05-03T00:00:00.000Z"
+  },
+  {
+    "teamId": 1610612741,
+    "abbreviation": "CHI",
+    "teamName": "Chicago Bulls",
+    "simpleName": "Bulls",
+    "location": "Chicago",
+    "date": "2023-05-01T00:00:00.000Z"
+  },
+  {
+    "teamId": 1610612739,
+    "abbreviation": "CLE",
+    "teamName": "Cleveland Cavaliers",
+    "simpleName": "Cavaliers",
+    "location": "Cleveland",
+    "date": "2023-05-03T00:00:00.000Z"
+  },
+  {
+    "teamId": 1610612742,
+    "abbreviation": "DAL",
+    "teamName": "Dallas Mavericks",
+    "simpleName": "Mavericks",
+    "location": "Dallas",
+    "date": "2023-05-02T00:00:00.000Z"
+  },
+  {
+    "teamId": 1610612743,
+    "abbreviation": "DEN",
+    "teamName": "Denver Nuggets",
+    "simpleName": "Nuggets",
+    "location": "Denver",
+    "date": "2023-05-03T00:00:00.000Z"
+  },
+  {
+    "teamId": 1610612765,
+    "abbreviation": "DET",
+    "teamName": "Detroit Pistons",
+    "simpleName": "Pistons",
+    "location": "Detroit",
+    "date": "2023-05-01T00:00:00.000Z"
+  },
+  {
+    "teamId": 1610612744,
+    "abbreviation": "GSW",
+    "teamName": "Golden State Warriors",
+    "simpleName": "Warriors",
+    "location": "Golden State",
+    "date": "2023-05-09T00:00:00.000Z"
+  },
+  {
+    "teamId": 1610612745,
+    "abbreviation": "HOU",
+    "teamName": "Houston Rockets",
+    "simpleName": "Rockets",
+    "location": "Houston",
+    "date": "2023-05-01T00:00:00.000Z"
+  },
+  {
+    "teamId": 1610612754,
+    "abbreviation": "IND",
+    "teamName": "Indiana Pacers",
+    "simpleName": "Pacers",
+    "location": "Indiana",
+    "date": "2023-05-01T00:00:00.000Z"
+  },
+  {
+    "teamId": 1610612746,
+    "abbreviation": "LAC",
+    "teamName": "Los Angeles Clippers",
+    "simpleName": "Clippers",
+    "location": "Los Angeles",
+    "date": "2023-05-10T00:00:00.000Z"
+  },
+  {
+    "teamId": 1610612747,
+    "abbreviation": "LAL",
+    "teamName": "Los Angeles Lakers",
+    "simpleName": "Lakers",
+    "location": "Los Angeles",
+    "date": "2023-05-09T00:00:00.000Z"
+  },
+  {
+    "teamId": 1610612763,
+    "abbreviation": "MEM",
+    "teamName": "Memphis Grizzlies",
+    "simpleName": "Grizzlies",
+    "location": "Memphis",
+    "date": "2023-05-05T00:00:00.000Z"
+  },
+  {
+    "teamId": 1610612748,
+    "abbreviation": "MIA",
+    "teamName": "Miami Heat",
+    "simpleName": "Heat",
+    "location": "Miami",
+    "date": "2023-05-04T00:00:00.000Z"
+  },
+  {
+    "teamId": 1610612749,
+    "abbreviation": "MIL",
+    "teamName": "Milwaukee Bucks",
+    "simpleName": "Bucks",
+    "location": "Milwaukee",
+    "date": "2023-05-06T00:00:00.000Z"
+  },
+  {
+    "teamId": 1610612750,
+    "abbreviation": "MIN",
+    "teamName": "Minnesota Timberwolves",
+    "simpleName": "Timberwolves",
+    "location": "Minnesota",
+    "date": "2023-05-04T00:00:00.000Z"
+  },
+  {
+    "teamId": 1610612740,
+    "abbreviation": "NOP",
+    "teamName": "New Orleans Pelicans",
+    "simpleName": "Pelicans",
+    "location": "New Orleans",
+    "date": "2023-05-10T00:00:00.000Z"
+  },
+  {
+    "teamId": 1610612752,
+    "abbreviation": "NYK",
+    "teamName": "New York Knicks",
+    "simpleName": "Knicks",
+    "location": "New York",
+    "date": "2023-05-08T00:00:00.000Z"
+  },
+  {
+    "teamId": 1610612760,
+    "abbreviation": "OKC",
+    "teamName": "Oklahoma City Thunder",
+    "simpleName": "Thunder",
+    "location": "Oklahoma City",
+    "date": "2023-05-10T00:00:00.000Z"
+  },
+  {
+    "teamId": 1610612753,
+    "abbreviation": "ORL",
+    "teamName": "Orlando Magic",
+    "simpleName": "Magic",
+    "location": "Orlando",
+    "date": "2023-05-08T00:00:00.000Z"
+  },
+  {
+    "teamId": 1610612755,
+    "abbreviation": "PHI",
+    "teamName": "Philadelphia 76ers",
+    "simpleName": "76ers",
+    "location": "Philadelphia",
+    "date": "2023-05-09T00:00:00.000Z"
+  },
+  {
+    "teamId": 1610612756,
+    "abbreviation": "PHX",
+    "teamName": "Phoenix Suns",
+    "simpleName": "Suns",
+    "location": "Phoenix",
+    "date": "2023-05-07T00:00:00.000Z"
+  },
+  {
+    "teamId": 1610612757,
+    "abbreviation": "POR",
+    "teamName": "Portland Trail Blazers",
+    "simpleName": "Trail Blazers",
+    "location": "Portland",
+    "date": "2023-05-06T00:00:00.000Z"
+  },
+  {
+    "teamId": 1610612758,
+    "abbreviation": "SAC",
+    "teamName": "Sacramento Kings",
+    "simpleName": "Kings",
+    "location": "Sacramento",
+    "date": "2023-05-08T00:00:00.000Z"
+  },
+  {
+    "teamId": 1610612759,
+    "abbreviation": "SAS",
+    "teamName": "San Antonio Spurs",
+    "simpleName": "Spurs",
+    "location": "San Antonio",
+    "date": "2023-05-07T00:00:00.000Z"
+  },
+  {
+    "teamId": 1610612761,
+    "abbreviation": "TOR",
+    "teamName": "Toronto Raptors",
+    "simpleName": "Raptors",
+    "location": "Toronto",
+    "date": "2023-05-06T00:00:00.000Z"
+  },
+  {
+    "teamId": 1610612762,
+    "abbreviation": "UTA",
+    "teamName": "Utah Jazz",
+    "simpleName": "Jazz",
+    "location": "Utah",
+    "date": "2023-05-10T00:00:00.000Z"
+  },
+  {
+    "teamId": 1610612764,
+    "abbreviation": "WAS",
+    "teamName": "Washington Wizards",
+    "simpleName": "Wizards",
+    "location": "Washington",
+    "date": "2023-05-09T00:00:00.000Z"
+  }
+]
