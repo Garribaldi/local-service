@@ -27,6 +27,15 @@ public class DataController {
     @Value("classpath:data/nba-teams.json")
     Resource nbaTeamResource;
 
+    @Value("classpath:data/cities.json")
+    Resource citiesResource;
+
+    @Value("classpath:data/countries.json")
+    Resource countriesResource;
+
+    @Value("classpath:data/inventory.json")
+    Resource inventoryResource;
+
     public DataController(ObjectMapper objectMapper) {
         this.objectMapper = objectMapper;
     }
@@ -59,5 +68,50 @@ public class DataController {
         }
 
         return ResponseEntity.ok(nbaTeams);
+    }
+
+    @GetMapping("/cities")
+    @ResponseStatus(HttpStatus.OK)
+    public ResponseEntity<List<CityEntity>> getCities() throws IOException {
+
+        File file = citiesResource.getFile();
+        List<CityEntity> cities = objectMapper.readValue(new File(file.toURI()), new TypeReference<>() {
+        });
+
+        if (cities.isEmpty()) {
+            return ResponseEntity.badRequest().build();
+        }
+
+        return ResponseEntity.ok(cities);
+    }
+
+    @GetMapping("/countries")
+    @ResponseStatus(HttpStatus.OK)
+    public ResponseEntity<List<CountryEntity>> getCountries() throws IOException {
+
+        File file = countriesResource.getFile();
+        List<CountryEntity> countries = objectMapper.readValue(new File(file.toURI()), new TypeReference<>() {
+        });
+
+        if (countries.isEmpty()) {
+            return ResponseEntity.badRequest().build();
+        }
+
+        return ResponseEntity.ok(countries);
+    }
+
+    @GetMapping("/inventory")
+    @ResponseStatus(HttpStatus.OK)
+    public ResponseEntity<List<InventoryEntity>> getInventory() throws IOException {
+
+        File file = inventoryResource.getFile();
+        List<InventoryEntity> inventory = objectMapper.readValue(new File(file.toURI()), new TypeReference<>() {
+        });
+
+        if (inventory.isEmpty()) {
+            return ResponseEntity.badRequest().build();
+        }
+
+        return ResponseEntity.ok(inventory);
     }
 }
