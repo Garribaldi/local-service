@@ -1,4 +1,4 @@
-package com.local.service.data;
+package com.local.service.data.entities;
 
 
 import lombok.AllArgsConstructor;
